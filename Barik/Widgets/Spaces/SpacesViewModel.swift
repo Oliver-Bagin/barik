@@ -116,7 +116,7 @@ class SpacesViewModel: ObservableObject, ConditionallyActivatableWidget {
                 return
             }
             let sortedSpaces = spaces.sorted { a, b in
-                // Improtant to avoide 1, 10, 11, 2 as the sorted order
+                // Important to avoid 1, 10, 11, 2 as the sorted order
                 if let intA = Int(a.id), let intB = Int(b.id) {
                     return intA < intB
                 }
